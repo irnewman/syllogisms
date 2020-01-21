@@ -1,11 +1,9 @@
 
-create_midterms <- function(midterm_source) 
+create_midterms <- function(midterm_source, number_of_items)
 {
-  number_of_items <- length(midterm_source$midterm)
-  
   # compute abstract middle terms
-  mid_mix <- sample(midterm_source$midterm)
-  midterms <- sample(mid_mix[1:number_of_items])
-  
+  midterms <- data.frame(sample_n(midterm_source, number_of_items))
+  #midterms <- sample(mid_mix[1:number_of_items])
+
   return(midterms)
 }

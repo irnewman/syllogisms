@@ -1,20 +1,23 @@
 
-create_pairs <- function(content_source, number_of_categories) 
+create_pairs <- function(content_source,
+                         number_of_categories,
+                         number_of_members)
 {
   # randomize content
-  content <- sample_n(content_orig, number_of_categories) 
-  
+  content <- sample_n(content_source, number_of_categories)
+
   # assign category-member pairings
-  content_df = rbind(
-    data.frame(cat = content$cat, mem = content$mem1,
-               stringsAsFactors = FALSE),
-    data.frame(cat = content$cat, mem = content$mem2,
-               stringsAsFactors = FALSE),
-    data.frame(cat = content$cat, mem = content$mem3,
-               stringsAsFactors = FALSE),
-    data.frame(cat = content$cat, mem = content$mem4,
-               stringsAsFactors = FALSE)
-  )
-  
+  content_df <- data.frame(matrix(nrow = 0, ncol = 2),
+                           stringsAsFactors = FALSE)
+
+  for (i in 1:number_of_members) {
+    content_df <- rbind(
+      content_df,
+      data.frame(cat = content$cat,
+                 mem = content[[paste0("mem", i)]],
+                 stringsAsFactors = FALSE)
+    )
+  }
+
   return(content_df)
 }
