@@ -19,5 +19,11 @@ create_pairs <- function(content_source,
     )
   }
 
+  sorted_content <- content_df[order(content_df$cat),]
+
+
+
   return(content_df)
 }
+
+

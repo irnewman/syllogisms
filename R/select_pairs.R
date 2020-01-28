@@ -1,48 +1,53 @@
 
 
-select_pairs <- function(content_pairs, nonsense_pairs, mid_terms)
+select_pairs <- function(content_pairs,
+                         nonsense_pairs,
+                         mid_terms,
+                         number_of_sensible)
 {
-  number_of_items <- length(content_pairs$cat)
 
-  # FIX
+  groups <- content_pairs %>% group_split(cat)  # no need to sort then
 
-  sorted_content <- content_pairs[order(content_pairs$cat),]
-  sorted_content$nonsense <- 0
-  sorted_nonsense <- nonsense_pairs[order(nonsense_pairs$cat),]
-  sorted_nonsense$nonsense <- 1
+  group_length <- nrow(groups[[1]])
 
-  selected_content <- sorted_content %>%
-    filter(row_number() %% 2 == 0)
+  number_of_groups <- nrow(content_pairs) / group_length
 
-  selected_nonsense <- sorted_nonsense %>%
-    filter(row_number() %% 2 == 1)
+  selected_content <- data.frame(matrix(nrow=0, ncol=2)) # edit colnum
+  colnames(selected_content) <- c(colnames(content_pairs))
 
-  joined_pairs <- rbind(selected_content, selected_nonsense)
+  #number_of_sensible <- content_numbers[["sensible"]][1]
 
-  mixorder <- sample(1:number_of_items)
+  t_order <- rep(1:number_of_groups, group_length)
 
-  selected_pairs <- joined_pairs[mixorder, ]
+  order <- t_order[1:number_of_sensible]
 
-  # #df %>% dplyr::filter(row_number() %% 2 == 0) ## Select even rows
-  # #df %>% dplyr::filter(row_number() %% 2 == 1) ## Select odd rows
-  #
-  # # need a better way to ensure half/half in each
-  # content_mix <- content_pairs[mixorder,]
-  # content_mix_nonsense = nonsense_pairs[mixorder,]
-  #
-  # # believable and unbelievable combinations
-  # content_mix_single_b <-
-  #   content_mix[1:(number_of_items/2),]
-  # content_mix_single_ub <-
-  #   content_mix_nonsense[((number_of_items/2)+1):number_of_items,]
-  #
-  # content_mix <- rbind(content_mix_single_b, content_mix_single_ub)
+  sample_numbers <- table(order)
 
-  return(selected_pairs)
+
+  for (i in 1:number_of_groups) {
+    selected_content <- rbind(selected_content,
+                              sample_n(groups[[i]],
+                              sample_numbers[[i]]))
+  }
+
+
+  unselected_content <- content_pairs %>%
+    filter(!(mem %in% selected_content$mem))
+
+
+  nonsense_content <- create_nonsense(unselected_content)
+
+
+  selected_content$nonsense <- 0
+  nonsense_content$nonsense <- 1
+
+  total_content <- rbind(nonsense_content, selected_content)
+
+  # return this with nonsense at the bottom
+  # then sort the template to have nonsense at the bottom
+  # attach columns, resort back to previous format
+
+
+  return(total_content)
 }
 
-
-#
-# t <- content_pairs %>%
-#   group_by(cat) %>%
-#   filter(row_number() <= cat * n())

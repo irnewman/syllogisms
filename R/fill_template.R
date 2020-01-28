@@ -9,7 +9,7 @@
 # figure 3 = AB-CB
 # figure 4 = BA-BC
 
-fill_template <- function(template_file, content)
+fill_template <- function(template, content)
 {
   A <- "All "
   E <- "No "
@@ -27,7 +27,7 @@ fill_template <- function(template_file, content)
   are <- "are "
 
 
-  template <- template_file %>%
+  template <- template %>%
     mutate(
       p1_template = case_when(
         (figure==1 & premise1 == 'A') ~ paste0(A, f1[1], are, f1[2]),
@@ -94,6 +94,8 @@ fill_template <- function(template_file, content)
 
 
   filled_template <- fill_content(template, content)
+
+  filled_template <- filled_template[order(filled_template$item), ]
 
   return(filled_template)
 }

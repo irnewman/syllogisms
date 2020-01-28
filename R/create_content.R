@@ -2,7 +2,8 @@
 #random_categories = TRUE,
 #random_members = TRUE
 
-create_content <- function(content_source,
+create_content <- function(template,
+                           content_source,
                            midterm_source,
                            number_of_categories = 0,
                            number_of_members = 0)
@@ -44,8 +45,11 @@ create_content <- function(content_source,
   mid_terms <- create_midterms(midterm_source, number_of_items)
 
   # create df of half content, half nonsense
+  number_of_sensible <- table(template$sensibility)[["sensible"]]
+
   # select the first half of content and the second half of nonsense
-  selected_pairs <- select_pairs(content_pairs, nonsense_pairs, mid_terms)
+  selected_pairs <- select_pairs(content_pairs, nonsense_pairs, mid_terms,
+                                 number_of_sensible)
 
   selected_pairs <- cbind(selected_pairs, mid_terms)
   colnames(selected_pairs) <- c("cat", "mem", "nonsense", "mid_terms")
