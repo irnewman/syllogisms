@@ -63,7 +63,7 @@ create_stim_files <- function(template_file,
     filled_template <- fill_template(template, content)
 
 
-    if (filled_template$re_run == 1) {
+    if (unique(filled_template$re_run == 1)) {
       # re do it all
       print("re-running")
       template <- expand_template(template_file,
