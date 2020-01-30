@@ -1,11 +1,18 @@
 Package: syllogisms
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: Generates Syllogism Stimuli Lists for Psychology Experiments
+Version: 0.0.0.9002
+Author: Ian R Newman
+Maintainer: Ian R Newman <ian.newman@usask.ca>
+Description: A method of automating creation of syllogism stimuli files with 
+    randomized content. It requires a template .csv file and a few function
+    arguments provided by the user. More information about the template is 
+    available at the github readme.
+    https://github.com/irnewman/syllogisms
+Depends:
+  dplyr,
+  stringr,
+  here
+License: 
 Encoding: UTF-8
 LazyData: true

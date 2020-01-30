@@ -1,11 +1,14 @@
 
+#' Compute limitations for believability options during content randomization.
+#'
+#' @param template A data frame of syllogism formats.
+#'
+#' @return Template with columns used to determine believability.
+#'
 
-# unfinished, not sure if all I have here is necessary
-# RENAME THIS FUNCTION TOO
 
 compute_belief_limitations <- function(template)
 {
-
   template <- template %>%
     mutate(
       sensibility = case_when(

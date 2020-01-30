@@ -1,21 +1,26 @@
-### quantifier
-# A = All are
-# E = No are
-# I = Some are
-# O = Some are not
 
-# figure 1 = AB-BC
-# figure 2 = BA-CB
-# figure 3 = AB-CB
-# figure 4 = BA-BC
+#' Completes the template with the randomized content as stimuli items.
+#'
+#' @param template A data frame of syllogism formats.
+#' @param content A data frame from create_pairs function of randomized content.
+#'
+#' @return Template from fill_content with content filled into the item formats.
 
 fill_template <- function(template, content)
 {
+  # A = All are
+  # E = No are
+  # I = Some are
+  # O = Some are not
   A <- "All "
   E <- "No "
   I <- "Some "
   O <- c("Some ", "not ")
 
+  # figure 1 = AB-BC
+  # figure 2 = BA-CB
+  # figure 3 = AB-CB
+  # figure 4 = BA-BC
   f1 <- c("A ", "B.", "B ", "C.")
   f2 <- c("B ", "A.", "C ", "B.")
   f3 <- c("A ", "B.", "C ", "B.")
@@ -26,7 +31,7 @@ fill_template <- function(template, content)
 
   are <- "are "
 
-
+  # create template columns based on figure and quantifier specified
   template <- template %>%
     mutate(
       p1_template = case_when(
@@ -89,12 +94,10 @@ fill_template <- function(template, content)
                                                           are, ca[2]),
         (conc_format=="C-A" & conclusion == 'O') ~ paste0(O[1], ca[1],
                                                           are, O[2], ca[2]))
-
     )
 
-
+  # fill the template with content and sort
   filled_template <- fill_content(template, content)
-
   filled_template <- filled_template[order(filled_template$item), ]
 
   return(filled_template)

@@ -4,4 +4,14 @@ A package to automate creation of syllogism stimuli lists for psychology experim
 
 # Current State
 
-Some functions are still unfinished, I would advise against trying to use the package currently. The documentation will be updated soon, as will completion of all the necessary functions and templates for a working version of the package. Improvements will follow incrementally. Please contact Ian at ian.newman@usask.ca if you have questions.
+The current version is working in a limited scope. 
+
+This readme will be updated soon and improvements will follow incrementally. Please use the syllogisms_code_directions.R file to create your stimuli lists. 
+
+Please contact Ian at ian.newman@usask.ca if you have questions or suggestions for additions and improvements.
+
+
+# Planned 
+
+1. Testing to allow for wider variety of user inputs
+2. Automation of template creation, based on user input
