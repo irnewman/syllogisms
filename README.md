@@ -1,6 +1,6 @@
 # syllogisms
 
-A package to automate creation of syllogism stimuli lists for psychology experiments.
+An R package to automate creation of syllogism stimuli lists for psychology experiments.
 
 # Installation
 
