@@ -1,0 +1,49 @@
+Weight	Nested	Procedure	COMPLEXITY	INSTRUCTION	PREM1	PREM2	CONC	VBOPTION	IUOPTION	SYLLNR	BELIEF	VAL	VALIDITY	ATMOSPHERE	FIGURE
+1		TrialProc	COMPLEX	LIKING	No parrots are mesoations.	Some mesoations are birds.	Some birds are not parrots.	Like	Dislike	1	BELIEVABLE	N	VALID	1	1
+1		TrialProc	COMPLEX	LIKING	No newts are stemoriuses.	Some stemoriuses are amphibians.	Some amphibians are not newts.	Like	Dislike	2	BELIEVABLE	N	VALID	1	1
+1		TrialProc	COMPLEX	LIKING	No boats are sothods.	Some sothods are canoes.	Some canoes are not boats.	Like	Dislike	3	UNBELIEVABLE	N	VALID	1	1
+1		TrialProc	COMPLEX	LIKING	No dogs are mouts.	Some mouts are terriers.	Some terriers are not dogs.	Like	Dislike	4	UNBELIEVABLE	N	VALID	1	1
+1		TrialProc	COMPLEX	LIKING	Some envenches are beetles.	No insects are envenches.	Some beetles are not insects.	Like	Dislike	5	UNBELIEVABLE	N	VALID	1	2
+1		TrialProc	COMPLEX	LIKING	Some wightes are sofas.	No pieces of furniture are wightes.	Some sofas are not pieces of furniture.	Like	Dislike	6	UNBELIEVABLE	N	VALID	1	2
+1		TrialProc	COMPLEX	LIKING	Some queels are fish.	No haddocks are queels.	Some fish are not haddocks.	Like	Dislike	7	BELIEVABLE	N	VALID	1	2
+1		TrialProc	COMPLEX	LIKING	Some naluals are fruits.	No prunes are naluals.	Some fruits are not prunes.	Like	Dislike	8	BELIEVABLE	N	VALID	1	2
+1		TrialProc	COMPLEX	LIKING	Some firters are tools.	No firters are spanners.	Some tools are not spanners.	Like	Dislike	9	BELIEVABLE	N	VALID	1	4
+1		TrialProc	COMPLEX	LIKING	Some boodings are cabbages.	No boodings are vegetables.	Some cabbages are not vegetables.	Like	Dislike	10	UNBELIEVABLE	N	VALID	1	4
+1		TrialProc	COMPLEX	LIKING	No trinnels are weapons.	Some trinnels are cannons.	Some cannons are not weapons.	Like	Dislike	11	UNBELIEVABLE	N	VALID	1	4
+1		TrialProc	COMPLEX	LIKING	No awops are iguanas.	Some awops are reptiles.	Some reptiles are not iguanas.	Like	Dislike	12	BELIEVABLE	N	VALID	1	4
+1		TrialProc	COMPLEX	LIKING	No peaches are tutches.	All tutches are fruits.	Some fruits are not peaches.	Like	Dislike	13	BELIEVABLE	N	VALID	2	1
+1		TrialProc	COMPLEX	LIKING	No trouts are catepies.	All catepies are fish.	Some fish are not trouts.	Like	Dislike	14	BELIEVABLE	N	VALID	2	1
+1		TrialProc	COMPLEX	LIKING	No pieces of furniture are dralys.	All dralys are bookcases.	Some bookcases are not pieces of furniture.	Like	Dislike	15	UNBELIEVABLE	N	VALID	2	1
+1		TrialProc	COMPLEX	LIKING	No insects are trangharnations.	All trangharnations are bees.	Some bees are not insects.	Like	Dislike	16	UNBELIEVABLE	N	VALID	2	1
+1		TrialProc	COMPLEX	LIKING	All stamuses are tools.	No saws are stamuses.	Some tools are not saws.	Like	Dislike	17	BELIEVABLE	N	VALID	2	2
+1		TrialProc	COMPLEX	LIKING	All fenches are parsnips.	No vegetables are fenches.	Some parsnips are not vegetables.	Like	Dislike	18	UNBELIEVABLE	N	VALID	2	2
+1		TrialProc	COMPLEX	LIKING	All renes are reptiles.	No snakes are renes.	Some reptiles are not snakes.	Like	Dislike	19	BELIEVABLE	N	VALID	2	2
+1		TrialProc	COMPLEX	LIKING	All jundors are swords.	No weapons are jundors.	Some swords are not weapons.	Like	Dislike	20	UNBELIEVABLE	N	VALID	2	2
+1		TrialProc	COMPLEX	LIKING	All pinds are amphibians.	No pinds are salamanders.	Some amphibians are not salamanders.	Like	Dislike	21	BELIEVABLE	N	VALID	2	4
+1		TrialProc	COMPLEX	LIKING	All goples are labradors.	No goples are dogs.	Some labradors are not dogs.	Like	Dislike	22	UNBELIEVABLE	N	VALID	2	4
+1		TrialProc	COMPLEX	LIKING	No bartroods are crows.	All bartroods are birds.	Some birds are not crows.	Like	Dislike	23	BELIEVABLE	N	VALID	2	4
+1		TrialProc	COMPLEX	LIKING	No striffs are boats.	All striffs are kayaks.	Some kayaks are not boats.	Like	Dislike	24	UNBELIEVABLE	N	VALID	2	4
+1		TrialProc	COMPLEX	LIKING	Some lizards are nickhomes.	No nickhomes are reptiles.	Some reptiles are not lizards.	Like	Dislike	25	BELIEVABLE	P	INVALID	3	1
+1		TrialProc	COMPLEX	LIKING	Some hammers are punes.	No punes are tools.	Some tools are not hammers.	Like	Dislike	26	BELIEVABLE	P	INVALID	3	1
+1		TrialProc	COMPLEX	LIKING	Some weapons are revoules.	No revoules are spears.	Some spears are not weapons.	Like	Dislike	27	UNBELIEVABLE	P	INVALID	3	1
+1		TrialProc	COMPLEX	LIKING	Some vegetables are cegarormes.	No cegarormes are carrots.	Some carrots are not vegetables.	Like	Dislike	28	UNBELIEVABLE	P	INVALID	3	1
+1		TrialProc	COMPLEX	LIKING	No decottions are yachts.	Some boats are decottions.	Some yachts are not boats.	Like	Dislike	29	UNBELIEVABLE	P	INVALID	3	2
+1		TrialProc	COMPLEX	LIKING	No bunges are amphibians.	Some frogs are bunges.	Some amphibians are not frogs.	Like	Dislike	30	BELIEVABLE	P	INVALID	3	2
+1		TrialProc	COMPLEX	LIKING	No burtes are birds.	Some ducks are burtes.	Some birds are not ducks.	Like	Dislike	31	BELIEVABLE	P	INVALID	3	2
+1		TrialProc	COMPLEX	LIKING	No brimbers are dalmatians.	Some dogs are brimbers.	Some dalmatians are not dogs.	Like	Dislike	32	UNBELIEVABLE	P	INVALID	3	2
+1		TrialProc	COMPLEX	LIKING	No pumes are fruits.	Some pumes are apples.	Some fruits are not apples.	Like	Dislike	33	BELIEVABLE	P	INVALID	3	4
+1		TrialProc	COMPLEX	LIKING	No ganches are desks.	Some ganches are pieces of furniture.	Some desks are not pieces of furniture.	Like	Dislike	34	UNBELIEVABLE	P	INVALID	3	4
+1		TrialProc	COMPLEX	LIKING	Some blans are insects.	No blans are flies.	Some flies are not insects.	Like	Dislike	35	UNBELIEVABLE	P	INVALID	3	4
+1		TrialProc	COMPLEX	LIKING	Some cortemns are cods.	No cortemns are fish.	Some fish are not cods.	Like	Dislike	36	BELIEVABLE	P	INVALID	3	4
+1		TrialProc	COMPLEX	LIKING	No birds are actablances.	Some actablances are sparrows.	All birds are sparrows.	Like	Dislike	37	BELIEVABLE	P	INVALID	4	1
+1		TrialProc	COMPLEX	LIKING	No spaniels are papes.	Some papes are dogs.	All spaniels are dogs.	Like	Dislike	38	UNBELIEVABLE	P	INVALID	4	1
+1		TrialProc	COMPLEX	LIKING	No speedboats are incibists.	Some incibists are boats.	All speedboats are boats.	Like	Dislike	39	UNBELIEVABLE	P	INVALID	4	1
+1		TrialProc	COMPLEX	LIKING	No amphibians are heets.	Some heets are toads.	All amphibians are toads.	Like	Dislike	40	BELIEVABLE	P	INVALID	4	1
+1		TrialProc	COMPLEX	LIKING	Some beechings are bananas.	No fruits are beechings.	All fruits are bananas.	Like	Dislike	41	BELIEVABLE	P	INVALID	4	2
+1		TrialProc	COMPLEX	LIKING	Some remoxtions are pieces of furniture.	No cupboards are remoxtions.	All cupboards are pieces of furniture.	Like	Dislike	42	UNBELIEVABLE	P	INVALID	4	2
+1		TrialProc	COMPLEX	LIKING	Some pooblings are salmons.	No fish are pooblings.	All fish are salmons.	Like	Dislike	43	BELIEVABLE	P	INVALID	4	2
+1		TrialProc	COMPLEX	LIKING	Some piffures are insects.	No ants are piffures.	All ants are insects.	Like	Dislike	44	UNBELIEVABLE	P	INVALID	4	2
+1		TrialProc	COMPLEX	LIKING	No duyumences are tools.	All duyumences are shovels.	Some tools are not shovels.	Like	Dislike	45	BELIEVABLE	P	INVALID	4	4
+1		TrialProc	COMPLEX	LIKING	No hoons are radishes.	All hoons are vegetables.	Some radishes are not vegetables.	Like	Dislike	46	UNBELIEVABLE	P	INVALID	4	4
+1		TrialProc	COMPLEX	LIKING	All trops are weapons.	No trops are guns.	Some guns are not weapons.	Like	Dislike	47	UNBELIEVABLE	P	INVALID	4	4
+1		TrialProc	COMPLEX	LIKING	All vindeces are crocodiles.	No vindeces are reptiles.	Some reptiles are not crocodiles.	Like	Dislike	48	BELIEVABLE	P	INVALID	4	4

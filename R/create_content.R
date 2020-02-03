@@ -32,6 +32,12 @@ create_content <- function(template,
     )))
   }
 
+  # fix column names if not lowercase
+  colnames(template) <- tolower(colnames(template))
+  colnames(content_source) <- tolower(colnames(content_source))
+  colnames(midterm_source) <- tolower(colnames(midterm_source))
+
+
   # set defaults to max per content file
   if (number_of_categories == 0) {
     number_of_categories <- nrow(content_source)

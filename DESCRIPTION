@@ -1,7 +1,7 @@
 Package: syllogisms
 Type: Package
 Title: Generates Syllogism Stimuli Lists for Psychology Experiments
-Version: 0.0.0.9002
+Version: 0.0.0.9003
 Author: Ian R Newman
 Maintainer: Ian R Newman <ian.newman@usask.ca>
 Description: A method of automating creation of syllogism stimuli files with 

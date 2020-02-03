@@ -12,15 +12,23 @@
 # ============================ #
 # Run this code to install the package from github. You can run it again to
 # update the package to its latest version. This will also install 3 other
-# packages if you do not have them (dplyr, stringr, here). Loading the package
-# with "library(syllogisms)" will load all the required packages.
+# packages if you do not have them (dplyr, stringr, here).
 
 devtools::install_github("irnewman/syllogisms")
+
+
+# Loading the package with "library(syllogisms)" will load all the required
+# packages.
+
 library(syllogisms)
 
 
 # load the template file    ####
 # ============================ #
+# NOTE: I have commented this out for now by adding the file to the package.
+#       This is an example for how to load your template if you use a different
+#       one than the default saved to the package.
+
 # The user must load a template file in comma separated format. There are also
 # required columns in the file for this package to work properly:
 
@@ -56,11 +64,11 @@ library(syllogisms)
 # the function call below.
 
 # Running this will load your template file.
-template_file <- read.table(paste0(here::here(),
-                                   "\\source_files\\atmosphere_template.csv"),
-                            header = TRUE,
-                            sep = ",",
-                            stringsAsFactors = FALSE)
+# template_file <- read.table(paste0(here::here(),
+#                                    "\\source_files\\atmosphere_template.csv"),
+#                             header = TRUE,
+#                             sep = ",",
+#                             stringsAsFactors = FALSE)
 
 
 # specify parameters        ####
@@ -80,9 +88,9 @@ template_file <- read.table(paste0(here::here(),
 # number_of_members = number of members per category to select from
 # number_of_participants = number of stimuli lists you would like to create
 
-create_stim_files(template_file,
-                  content_source = syllogisms::content_pairs,
-                  midterm_source = syllogisms::nonsense_words,
+create_stim_files(template_file = syllogisms::template_file,
+                  content_source = syllogisms::content_orig,
+                  midterm_source = syllogisms::midterms,
                   counterbalance_columns = c("type", "figure"),
                   believability_options = c("believable", "unbelievable"),
                   instructions_options = c("logic", "belief"),
@@ -91,10 +99,10 @@ create_stim_files(template_file,
                   number_of_participants = 1)
 
 
-# That's all that is needed. The files should be saved into a timestamped folder
-# as a subdirectory of the current working directory. Depending on the number
-# of participants set, it may take a couple minutes to run to completion. On my
-# (fairly old) computer, creating 100 lists took about 90 seconds.
+# The files should be saved into a timestamped folder as a subdirectory of the
+# current working directory. Depending on the number of participants set, it
+# may take a couple minutes to run to completion. On my (fairly old) computer,
+# creating 100 lists took about 90 seconds.
 
 
 # end                       ####

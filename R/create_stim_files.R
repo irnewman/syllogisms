@@ -55,6 +55,9 @@ create_stim_files <- function(template_file,
     template_filename <- paste0(getwd(),
                             "\\template",
                             i, ".csv")
+    summary_filename <- paste0(getwd(),
+                               "\\summary",
+                               i, ".txt")
 
     # compute template columns
     template <- expand_template(template_file,
@@ -72,8 +75,9 @@ create_stim_files <- function(template_file,
     # fill template with content
     filled_template <- fill_template(template, content)
 
-    # if imbalanced randomization found, re-run
-    if (unique(filled_template$re_run == 1)) {
+    # while imbalanced randomization found, re-run
+    while (unique(filled_template$re_run == 1)) {
+      # print("rerunning")  # test how often this occurs
       template <- expand_template(template_file,
                                   counterbalance_columns,
                                   believability_options,
@@ -89,11 +93,15 @@ create_stim_files <- function(template_file,
     # create E-prime output
     output_frame <- generate_outframe(filled_template)
 
+    # create summary
+    summary <- summarize_files(filled_template)
+
     # save output files
     write.table(output_frame, outframe_filename,
                 row.names = FALSE, quote = FALSE, sep="\t")
     write.table(filled_template, template_filename,
                 row.names = FALSE, quote = FALSE, sep=",")
-
+    write.table(summary, summary_filename,
+                row.names = FALSE, quote = FALSE, sep="\t")
   }
 }

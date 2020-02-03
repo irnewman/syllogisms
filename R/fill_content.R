@@ -44,16 +44,16 @@ fill_content <- function(template, content)
   template <- template[order(template$category_calc), ]
 
   # find the number of A=category and A=member items so far
-  number_of_c <- (nrow(template) / 2) - table(template$category)[["C"]]
-  number_of_a <- (nrow(template) / 2) - table(template$category)[["A"]]
+  number_of_c <- (nrow(template) / 2) - table(template$category_calc)[["C"]]
+  number_of_a <- (nrow(template) / 2) - table(template$category_calc)[["A"]]
 
   # make sure there is an equal number of A=category and A=member items
   # NOTE: if the randomization makes that impossible, it will re-randomize
   #       in the create_stim_files function
-  if (number_of_a < 1) {
+  if (number_of_a < 0) {
     random_categories <- rep("C", number_of_c)
     template$re_run <- 1
-  } else if (number_of_c < 1) {
+  } else if (number_of_c < 0) {
     random_categories <- rep("A", number_of_a)
     template$re_run <- 1
   } else {

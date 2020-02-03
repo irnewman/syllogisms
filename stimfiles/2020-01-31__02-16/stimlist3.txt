@@ -1,0 +1,49 @@
+Weight	Nested	Procedure	COMPLEXITY	INSTRUCTION	PREM1	PREM2	CONC	VBOPTION	IUOPTION	SYLLNR	BELIEF	VAL	VALIDITY	ATMOSPHERE	FIGURE
+1		TrialProc	COMPLEX	LOGIC	No murderers are ganches.	Some ganches are criminals.	Some criminals are not murderers.	Valid	Invalid	1	BELIEVABLE	N	VALID	1	1
+1		TrialProc	COMPLEX	BELIEF	No drinks are bunges.	Some bunges are wines.	Some wines are not drinks.	Believable	Unbelievable	2	UNBELIEVABLE	N	VALID	1	1
+1		TrialProc	COMPLEX	BELIEF	No Fords are boodings.	Some boodings are cars.	Some cars are not Fords.	Believable	Unbelievable	3	BELIEVABLE	N	VALID	1	1
+1		TrialProc	COMPLEX	LOGIC	No dogs are cosuors.	Some cosuors are terriers.	Some terriers are not dogs.	Valid	Invalid	4	UNBELIEVABLE	N	VALID	1	1
+1		TrialProc	COMPLEX	LOGIC	Some tutches are fruits.	No apples are tutches.	Some fruits are not apples.	Valid	Invalid	5	BELIEVABLE	N	VALID	1	2
+1		TrialProc	COMPLEX	LOGIC	Some firters are desks.	No pieces of furniture are firters.	Some desks are not pieces of furniture.	Valid	Invalid	6	UNBELIEVABLE	N	VALID	1	2
+1		TrialProc	COMPLEX	BELIEF	Some snains are lizards.	No reptiles are snains.	Some lizards are not reptiles.	Believable	Unbelievable	7	UNBELIEVABLE	N	VALID	1	2
+1		TrialProc	COMPLEX	BELIEF	Some renes are insects.	No bees are renes.	Some insects are not bees.	Believable	Unbelievable	8	BELIEVABLE	N	VALID	1	2
+1		TrialProc	COMPLEX	LOGIC	Some bartroods are tools.	No bartroods are shovels.	Some tools are not shovels.	Valid	Invalid	9	BELIEVABLE	N	VALID	1	4
+1		TrialProc	COMPLEX	BELIEF	Some brimbers are carrots.	No brimbers are vegetables.	Some carrots are not vegetables.	Believable	Unbelievable	10	UNBELIEVABLE	N	VALID	1	4
+1		TrialProc	COMPLEX	LOGIC	No stemoriuses are weapons.	Some stemoriuses are spears.	Some spears are not weapons.	Valid	Invalid	11	UNBELIEVABLE	N	VALID	1	4
+1		TrialProc	COMPLEX	BELIEF	No pumes are oaks.	Some pumes are trees.	Some trees are not oaks.	Believable	Unbelievable	12	BELIEVABLE	N	VALID	1	4
+1		TrialProc	COMPLEX	LOGIC	No flies are veemers.	All veemers are insects.	Some insects are not flies.	Valid	Invalid	13	BELIEVABLE	N	VALID	2	1
+1		TrialProc	COMPLEX	BELIEF	No peaches are heets.	All heets are fruits.	Some fruits are not peaches.	Believable	Unbelievable	14	BELIEVABLE	N	VALID	2	1
+1		TrialProc	COMPLEX	LOGIC	No pieces of furniture are chails.	All chails are cupboards.	Some cupboards are not pieces of furniture.	Valid	Invalid	15	UNBELIEVABLE	N	VALID	2	1
+1		TrialProc	COMPLEX	BELIEF	No reptiles are curges.	All curges are crocodiles.	Some crocodiles are not reptiles.	Believable	Unbelievable	16	UNBELIEVABLE	N	VALID	2	1
+1		TrialProc	COMPLEX	LOGIC	All trangharnations are tools.	No spanners are trangharnations.	Some tools are not spanners.	Valid	Invalid	17	BELIEVABLE	N	VALID	2	2
+1		TrialProc	COMPLEX	BELIEF	All glukers are trees.	No pines are glukers.	Some trees are not pines.	Believable	Unbelievable	18	BELIEVABLE	N	VALID	2	2
+1		TrialProc	COMPLEX	BELIEF	All pooblings are parsnips.	No vegetables are pooblings.	Some parsnips are not vegetables.	Believable	Unbelievable	19	UNBELIEVABLE	N	VALID	2	2
+1		TrialProc	COMPLEX	LOGIC	All dralys are swords.	No weapons are dralys.	Some swords are not weapons.	Valid	Invalid	20	UNBELIEVABLE	N	VALID	2	2
+1		TrialProc	COMPLEX	BELIEF	All hoons are cars.	No hoons are Toyotas.	Some cars are not Toyotas.	Believable	Unbelievable	21	BELIEVABLE	N	VALID	2	4
+1		TrialProc	COMPLEX	LOGIC	All queels are dalmatians.	No queels are dogs.	Some dalmatians are not dogs.	Valid	Invalid	22	UNBELIEVABLE	N	VALID	2	4
+1		TrialProc	COMPLEX	LOGIC	No catepies are terrorists.	All catepies are criminals.	Some criminals are not terrorists.	Valid	Invalid	23	BELIEVABLE	N	VALID	2	4
+1		TrialProc	COMPLEX	BELIEF	No trops are drinks.	All trops are beers.	Some beers are not drinks.	Believable	Unbelievable	24	UNBELIEVABLE	N	VALID	2	4
+1		TrialProc	COMPLEX	BELIEF	Some willows are pinds.	No pinds are trees.	Some trees are not willows.	Believable	Unbelievable	25	BELIEVABLE	P	INVALID	3	1
+1		TrialProc	COMPLEX	LOGIC	Some vegetables are fenches.	No fenches are cabbages.	Some cabbages are not vegetables.	Valid	Invalid	26	UNBELIEVABLE	P	INVALID	3	1
+1		TrialProc	COMPLEX	LOGIC	Some hammers are vindeces.	No vindeces are tools.	Some tools are not hammers.	Valid	Invalid	27	BELIEVABLE	P	INVALID	3	1
+1		TrialProc	COMPLEX	BELIEF	Some weapons are aschitations.	No aschitations are cannons.	Some cannons are not weapons.	Believable	Unbelievable	28	UNBELIEVABLE	P	INVALID	3	1
+1		TrialProc	COMPLEX	BELIEF	No spaves are sodas.	Some drinks are spaves.	Some sodas are not drinks.	Believable	Unbelievable	29	UNBELIEVABLE	P	INVALID	3	2
+1		TrialProc	COMPLEX	LOGIC	No punes are spaniels.	Some dogs are punes.	Some spaniels are not dogs.	Valid	Invalid	30	UNBELIEVABLE	P	INVALID	3	2
+1		TrialProc	COMPLEX	LOGIC	No duyumences are cars.	Some BMWs are duyumences.	Some cars are not BMWs.	Valid	Invalid	31	BELIEVABLE	P	INVALID	3	2
+1		TrialProc	COMPLEX	BELIEF	No papes are criminals.	Some robbers are papes.	Some criminals are not robbers.	Believable	Unbelievable	32	BELIEVABLE	P	INVALID	3	2
+1		TrialProc	COMPLEX	BELIEF	No awops are snakes.	Some awops are reptiles.	Some snakes are not reptiles.	Believable	Unbelievable	33	UNBELIEVABLE	P	INVALID	3	4
+1		TrialProc	COMPLEX	LOGIC	No striffs are bookcases.	Some striffs are pieces of furniture.	Some bookcases are not pieces of furniture.	Valid	Invalid	34	UNBELIEVABLE	P	INVALID	3	4
+1		TrialProc	COMPLEX	LOGIC	Some vennars are ants.	No vennars are insects.	Some insects are not ants.	Valid	Invalid	35	BELIEVABLE	P	INVALID	3	4
+1		TrialProc	COMPLEX	BELIEF	Some sothods are bananas.	No sothods are fruits.	Some fruits are not bananas.	Believable	Unbelievable	36	BELIEVABLE	P	INVALID	3	4
+1		TrialProc	COMPLEX	BELIEF	No whiskeys are pylones.	Some pylones are drinks.	All whiskeys are drinks.	Believable	Unbelievable	37	UNBELIEVABLE	P	INVALID	4	1
+1		TrialProc	COMPLEX	BELIEF	No cars are blans.	Some blans are Volvos.	All cars are Volvos.	Believable	Unbelievable	38	BELIEVABLE	P	INVALID	4	1
+1		TrialProc	COMPLEX	LOGIC	No labradors are jundors.	Some jundors are dogs.	All labradors are dogs.	Valid	Invalid	39	UNBELIEVABLE	P	INVALID	4	1
+1		TrialProc	COMPLEX	LOGIC	No criminals are teartes.	Some teartes are embezzlers.	All criminals are embezzlers.	Valid	Invalid	40	BELIEVABLE	P	INVALID	4	1
+1		TrialProc	COMPLEX	BELIEF	Some envenches are reptiles.	No iguanas are envenches.	All iguanas are reptiles.	Believable	Unbelievable	41	UNBELIEVABLE	P	INVALID	4	2
+1		TrialProc	COMPLEX	LOGIC	Some naluals are pieces of furniture.	No sofas are naluals.	All sofas are pieces of furniture.	Valid	Invalid	42	UNBELIEVABLE	P	INVALID	4	2
+1		TrialProc	COMPLEX	BELIEF	Some actablances are prunes.	No fruits are actablances.	All fruits are prunes.	Believable	Unbelievable	43	BELIEVABLE	P	INVALID	4	2
+1		TrialProc	COMPLEX	LOGIC	Some mips are beetles.	No insects are mips.	All insects are beetles.	Valid	Invalid	44	BELIEVABLE	P	INVALID	4	2
+1		TrialProc	COMPLEX	LOGIC	No mesoations are tools.	All mesoations are saws.	Some tools are not saws.	Valid	Invalid	45	BELIEVABLE	P	INVALID	4	4
+1		TrialProc	COMPLEX	BELIEF	No beechings are trees.	All beechings are maples.	Some trees are not maples.	Believable	Unbelievable	46	BELIEVABLE	P	INVALID	4	4
+1		TrialProc	COMPLEX	BELIEF	All stamuses are weapons.	No stamuses are guns.	Some guns are not weapons.	Believable	Unbelievable	47	UNBELIEVABLE	P	INVALID	4	4
+1		TrialProc	COMPLEX	LOGIC	All cegarormes are vegetables.	No cegarormes are radishes.	Some radishes are not vegetables.	Valid	Invalid	48	UNBELIEVABLE	P	INVALID	4	4
